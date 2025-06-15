@@ -78,4 +78,74 @@
   <div class="footer">safe and faithful</div>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .box {
+      border: 1px dashed #00aaff;
+      padding: 10px;
+      margin: 10px;
+    }
+    .section-title {
+      background: #00aaff;
+      color: white;
+      padding: 8px;
+      font-weight: bold;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .copy-btn {
+      margin-left: 10px;
+      padding: 3px 10px;
+    }
+    .warning {
+      color: red;
+      font-weight: bold;
+    }
+    .submit-btn {
+      margin-top: 15px;
+      padding: 8px 16px;
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="section-title">Payment Form</div>
+
+    <form>
+      <div>
+        <label class="label" for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div>
+        <label class="label" for="amount">Amount:</label><br>
+        <input type="number" id="amount" name="amount" required>
+      </div>
+
+      <div>
+        <label class="label" for="payment-method">Choose Payment Method:</label><br>
+        <select id="payment-method" name="payment-method">
+          <option value="upi">UPI</option>
+          <option value="jazzcash">JazzCash</option> <!-- New App Option -->
+          <option value="easypaisa">Easypaisa</option> <!-- You can add more -->
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Payment</button>
+    </form>
+  </div>
+</body>
 </html>
+
