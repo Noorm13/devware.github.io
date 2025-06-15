@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .box {
+      border: 1px dashed #00aaff;
+      padding: 10px;
+      margin: 10px;
+    }
+    .section-title {
+      background: #00aaff;
+      color: white;
+      padding: 8px;
+      font-weight: bold;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .copy-btn {
+      margin-left: 10px;
+      padding: 3px 10px;
+    }
+    .warning {
+      color: red;
+      font-weight: bold;
+    }
+    .submit-btn {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      background-color: #2b6cb0;
+      color: white;
+      border: none;
+      font-size: 16px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Step 1 -->
+  <div class="box">
+    <div class="section-title">Step 1 : Copy Amount and Back Account information</div>
+
+    <p><span class="label">Amount</span>: <span style="color: orange;">AMOUNT</span> <button class="copy-btn">Copy</button></p>
+    <p><span class="label">Name</span>: <span style="color: orange;">COMPANY_NAME</span> <button class="copy-btn">Copy</button></p>
+    <p><span class="label">VPA/UPI</span>: <span style="color: orange;">UPI_ID</span> <button class="copy-btn">Copy</button></p>
+
+    <!-- 🔹 New App Name Field -->
+    <p><span class="label">App Name</span>: <span style="color: orange;">Google Pay</span> <button class="copy-btn">Copy</button></p>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="box">
+    <div class="section-title">Step 2 : Transfer and don't modify this amount to us</div>
+    <p class="warning">⚠️ Please record your reference No. {Ref No.} after payment</p>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="box">
+    <div class="section-title">Step 3 : Please enter Ref No. to complete the payment</div>
+    <p class="warning">⚠️ Be sure to return this page to fill the UTR numbers after you have completed your payment</p>
+    <input type="text" placeholder="UTR (UPI Ref. ID) must be 12 digits" style="width:100%; padding:10px;" maxlength="12">
+    <button class="submit-btn">Submit UTR</button>
+  </div>
+
+  <div class="footer">safe and faithful</div>
+
+</body>
+</html>
